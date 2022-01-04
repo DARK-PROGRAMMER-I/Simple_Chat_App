@@ -17,11 +17,11 @@ class _SignInState extends State<SignIn> {
     return Scaffold(
       appBar: appBarMain(context),
       body: Container(
-        child: Center(
-          child: Padding(
+        child: Padding(
 
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextField(
                 decoration: hint_text("email"),
@@ -83,13 +83,24 @@ class _SignInState extends State<SignIn> {
                     child: Text("Sign In with Google", style: TextStyle(color: Colors.black87, fontSize: 18, wordSpacing: 2),),
                   ),
                 ),
+
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("Don't have an account?", style: TextStyle(color: Colors.white70, fontSize: 15),),
+                    Text("Register Now", style: TextStyle(color: Colors.white70, fontSize: 15, decoration: TextDecoration.underline),)
+                  ],
+                ),
                 
 
               ],
             ),
           )
         ),
-      ),
+      // ),
     );
   }
   // TextField textFieldAdder(String text){
