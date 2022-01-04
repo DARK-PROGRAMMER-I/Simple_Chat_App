@@ -15,6 +15,7 @@ class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: appBarMain(context),
       body: Container(
         child: Padding(
@@ -37,7 +38,7 @@ class _SignInState extends State<SignIn> {
                 ),
                 Container(
                   alignment: Alignment.centerRight,
-                  child: Text("Forgot Passward", style: TextStyle(color: Colors.white70, fontSize: 15),),
+                  child: Text("Forgot Passward ?", style: TextStyle(color: Colors.white70, fontSize: 15, decoration: TextDecoration.underline),),
                 ),
                 SizedBox(
                   height: 20,
@@ -50,7 +51,7 @@ class _SignInState extends State<SignIn> {
                 //   },
                 //   child:
                 Container(
-                    padding: EdgeInsets.symmetric(vertical: 20),
+                    padding: EdgeInsets.symmetric(vertical: 18),
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(25),
@@ -73,7 +74,7 @@ class _SignInState extends State<SignIn> {
                 ),
                 Container(
                   alignment: Alignment.center,
-                  padding: EdgeInsets.symmetric(vertical: 20),
+                  padding: EdgeInsets.symmetric(vertical: 18),
                   // padding: EdgeInsets.symmetric(vertical: 20),
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -94,7 +95,7 @@ class _SignInState extends State<SignIn> {
                     Text("Register Now", style: TextStyle(color: Colors.white70, fontSize: 15, decoration: TextDecoration.underline),)
                   ],
                 ),
-                
+
 
               ],
             ),
