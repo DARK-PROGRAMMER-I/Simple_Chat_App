@@ -1,4 +1,5 @@
 import 'package:chat_app_android/views/signin.dart';
+import 'package:chat_app_android/views/signup.dart';
 import "package:flutter/cupertino.dart";
 import "package:flutter/material.dart";
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
 
 
-      home: SignIn()
+      home: SignUp()
     ) ;
   }
 }
