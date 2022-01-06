@@ -10,8 +10,13 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
+
+  TextEditingController userNameTextEditingController= new TextEditingController();
+  TextEditingController emailTextEditingController= new TextEditingController();
+  TextEditingController passwardTextEditingController= new TextEditingController();
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: appBarMain(context),
@@ -22,14 +27,17 @@ class _SignUpState extends State<SignUp> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextField(
+                  controller: userNameTextEditingController,
                   decoration: hint_text("user name"),
                   style: textStyleOfHint(context)
                 ),
                 TextField(
+                  controller: emailTextEditingController,
                   decoration: hint_text("email"),
                   style: textStyleOfHint(context),
                 ),
                 TextField(
+                  controller: passwardTextEditingController,
                   decoration: hint_text("passward"),
                   obscureText: true,
                   style: textStyleOfHint(context)
